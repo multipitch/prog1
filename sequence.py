@@ -158,7 +158,7 @@ plt.tick_params(axis='both', which='major', labelsize=10) # size tick labels
 plt.legend(title=r'$precision$',fontsize=12, loc=4)          # add legend
 plt.axis([0, 160, -20, 120])
 plt.plot()                                            # create plot
-plt.savefig("fig1.pdf", format="pdf")                 # export as pdf
+plt.savefig("fig1.png", format="png")                 # export as pdf
 plt.close('all')
 
 # time plot (time as a function of precision)
@@ -170,7 +170,7 @@ if doTimings == True:
     plt.tick_params(axis='both', which='major', labelsize=10) # size tick labels
     plt.legend(title=r'$type$',fontsize=12, loc=4)
     plt.plot()
-    plt.savefig("fig2.pdf", format="pdf")                     # export as pdf
+    plt.savefig("fig2.png", format="png")                     # export as pdf
     plt.close('all')
 
 
@@ -187,6 +187,6 @@ plt.xlabel(r'$x$',fontsize=16)
 plt.ylabel(r'$f(x)$',fontsize=16)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.plot()
-plt.savefig("fig3.pdf", format="pdf")
+plt.savefig("fig3.png", format="png")
 plt.close('all')
 

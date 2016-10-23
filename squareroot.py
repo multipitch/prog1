@@ -117,7 +117,7 @@ plt.yscale('log')
 plt.tick_params(axis='both', which='major', labelsize=10) # size tick labels
 plt.legend(title=r'$precision$',fontsize=12)  
 plt.plot()                                             # create plot
-plt.savefig("fig4.pdf", format="pdf")                  # export as pdf
+plt.savefig("fig4.png", format="png")                  # export as pdf
 plt.close('all')
 
 # plot convergence for floating point and various fixed-precision decimal runs
@@ -135,7 +135,7 @@ plt.ylabel(r'$k$',fontsize=16)
 plt.tick_params(axis='both', which='major', labelsize=10) # size tick labels
 plt.legend(title=r'$type$',fontsize=12, loc=4)  
 plt.plot()                                             # create plot
-plt.savefig("fig5.pdf", format="pdf")                  # export as pdf
+plt.savefig("fig5.png", format="png")                  # export as pdf
 plt.close('all')
 
 # calculate relative errors
@@ -155,11 +155,11 @@ plt.plot(range(len(fe)), fe, 'ok-', label=r'$float$')  # plot float results
 for i in range(len(p)):                                # plot decimal results
     plt.plot(range(len(de[i])), de[i], s[i], label=(p[i]))
 plt.xlabel(r'$k$',fontsize=16)                         # add labels
-plt.ylabel(r'$x_k$',fontsize=16)
+plt.ylabel('relative error',fontsize=16)
 plt.yscale('log')
 plt.tick_params(axis='both', which='major', labelsize=10) # size tick labels
 plt.legend(title=r'$precision$',fontsize=12)  
 plt.plot()                                             # create plot
-plt.savefig("fig6.pdf", format="pdf")                  # export as pdf
+plt.savefig("fig6.png", format="png")                  # export as pdf
 plt.close('all')
 
